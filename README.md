@@ -414,7 +414,7 @@ git push origin main
 ### Business Config — `config/dealers.json`
 
 ```jsonc
-{
+{"EXAMPLE"
   "cities": [
     {
       "city_id": "delhi",
@@ -428,8 +428,8 @@ git push origin main
       },
       "candidate_dealers": [
         {
-          "dealer_name": "Autovikas",
-          "brand": "Tata Motors",
+          "dealer_name": "Auto.....",
+          "brand": "Tata Motors..........",
           "meta_page_ids": ["optional_seed"],
           "active": true
         }
@@ -437,8 +437,8 @@ git push origin main
       ]
     }
   ],
-  "allowed_competitor_brands": ["Kia", "Tata Motors", "Mahindra & Mahindra"],
-  "excluded_brands": ["Hyundai", "Honda", "Ford"]
+  "allowed_competitor_brands": ["Kia", "Tata Motors", "Mahindra & Mahindra ..................."],
+  "excluded_brands": ["Hyundai""]
 }
 ```
 
@@ -446,8 +446,8 @@ git push origin main
 
 ```env
 # API Keys
-SEARCHAPI_API_KEY=sk_...
-GROQ_API_KEY=gsk_...
+META_API_KEY=sk_...
+API_KEY=gsk_...
 
 # Database
 DATABASE_URL=postgresql://user:pass@db.supabase.co/postgres
@@ -545,6 +545,7 @@ ADVISORY_WINDOW_DAYS=7
 | **Redis Cloud** | Free–$50/mo | Cache layer |
 | **Groq API** | ~$1–5/mo | LLM calls (cached) |
 | **SearchAPI** | Pay-as-you-go | Meta Ad Library (~$0.002/call) |
+| **Meta API** | Pay-as-you-go | Meta Ad Library |
 
 ---
 
@@ -706,13 +707,8 @@ GET  /api/candidates/conflicts       # Page ownership conflicts
 
 ## 🚀 Future Roadmap
 
-### 🔮 Phase 2 (Q4 2024)
-- ✨ **Multi-document comparison** — compare strategies across cities
-- 🎬 **Campaign clustering** — group similar competitor campaigns
-- 📊 **Advanced analytics** — trend analysis, forecasting
-- 🤝 **Collaboration tools** — share insights with team
 
-### 🔮 Phase 3 (2025)
+### 🔮 Phase 2 
 - 🌍 **Multi-market expansion** — support additional geographies
 - 📱 **Mobile app** — iOS/Android native apps
 - 🔔 **Alerts** — real-time notifications on major competitor moves
@@ -836,18 +832,12 @@ This project was independently designed and built end-to-end.
 
 ---
 
-## 📧 Contact & Questions
-
-For support, architecture discussions, or feature requests:
-- 📬 Email: rohitaisubs@gmail.com
-- 🐙 GitHub: [@rohit-subs](https://github.com/rohit-subs)
-- 💼 LinkedIn: [Rohit](https://linkedin.com/in/rohit)
 
 ---
 
 **🎉 Built with ❤️ using React, FastAPI, Supabase, Redis, and Groq**
 
-**Last Updated:** September 2024  
+**Last Updated:** September 2026 
 **Status:** Production Ready ✅  
 **Version:** 5.0 (Full-Stack Rewrite)
 
